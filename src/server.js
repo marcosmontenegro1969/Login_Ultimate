@@ -1,7 +1,8 @@
-const express = require('express'); //carrega a biblioteca Express, que ajuda a organizar e simplificar o desenvolvimento em Node.js.
-const rotas = require('./routes'); //importa para a variável "routes" a rota criada no arquivo routes.js
-const cors = require('cors'); //pacote que permite que o appback seja acessado por outra origem, como por exemplo o appfront. 
-const appback = express(); //appback será o nosso servidor.
+const express = require('express'); //carrega o Express, o framework padrão para Node.js que facilita a criação de servidores web e a manipulação de rotas e requisições HTTP.
+const cors = require('cors'); //carrega o CORS, um pacote que permite que o appback seja acessado por outra origem, como por exemplo o appfront. 
+
+const appback = express(); //cria o nosso servidor express e o armazena na variavel "appback".
+const rotas = require('./routes.js'); //importa a rota criada no arquivo routes.js para a variavel "rotas".
 
 appback.use(express.json()); //informa ao servidor appback que usará o formato JSON para as requisições.
 appback.use(cors()); //diz ao servidor que usará o cors, que permite o acesso de outra origem, como por exemplo o appfront.
