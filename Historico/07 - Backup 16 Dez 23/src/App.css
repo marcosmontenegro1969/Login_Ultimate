@@ -1,0 +1,235 @@
+@font-face {
+  font-family: 'GrandHotel-Regular';
+  src: url('./components/fonts/GrandHotel-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Felbridge Std Bold';
+  src: url('./components/fonts/Felbridge_Std_Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Felbridge Std Light';
+  src: url('./components/fonts/Felbridge_Std_Light.woff2') format('woff2');
+  font-weight: 300; /* ou outro valor apropriado para 'light' */
+  font-style: normal;
+}
+body {
+  background-color: #9f9da7;   /* Define a cor de fundo do corpo da página como um tom de cinza */
+  font-size: 1.6rem; /*Define o tamanho da fonte para o corpo da página como 1.6 rem*/
+  font-family: "Open Sans", sans-serif; /*Define "Open Sans" como família preferencial de fontes para o corpo da página.*/
+  color: #2b3e51; /*Define a cor do texto do corpo como um tom de azul escuro*/
+}
+
+.login-container {
+  display: flex;
+  height : 500px;
+  width: 650px; /* Largura do container */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Efeito de sombra para o container */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-image {
+  width: 250px; 
+  height: 500px;
+  background-color: #0367A6;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.login-image img {
+  padding-top: 30px;
+  margin-bottom: -20px; 
+}
+
+.nome-empresa {
+  margin-top: 0px;
+  font-size: 48px;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para efeito de relevo */
+}
+
+.nome-empresa .bold {
+  font-family: 'Felbridge Std Bold';
+}
+
+.nome-empresa .light {
+  font-family: 'Felbridge Std Light';
+}
+.palavra-edu {
+  display: flex;
+  gap: 8px; /* Espaçamento entre as letras */
+  margin-top: 10px; /* Ajuste conforme necessário para a distância de "cangame" */
+}
+
+.edu-letra {
+  width: 30px; /* Tamanho dos quadrados */
+  height: 30px;
+  background-color: #FFFFFF; /* Fundo branco */
+  color: #0367A6; /* Cor da letra */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Felbridge Std Bold'; /* ou a fonte que você deseja usar */
+  font-size: 30px; /* Ajuste conforme necessário */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Efeito de sombreamento */
+  border-radius: 5px; /* Se quiser cantos arredondados */
+}
+
+.redes_Sociais {
+  display: flex;
+  margin-top: 120px;
+  justify-content: center; /* Centraliza os ícones horizontalmente */
+  gap: 15px; /* Adiciona um espaço entre os ícones */
+}
+
+.redes_Sociais svg {
+  width: 48px; /* ou outro tamanho conforme necessário */
+  height: 48px;
+  transition: transform 0.3s ease;
+}
+
+.redes_Sociais svg:hover {
+  transform: scale(1.3); /* Efeito de zoom no hover */
+}
+
+.login-formulario {
+  width: 400px; /* 2/3 da largura do container */
+  height: 500px;
+  background-image: url('./components/Identidade_Visual/header-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.h2_bem-vindo {
+  color: white;
+  font-family: "GrandHotel-Regular", sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.label_Inputs {
+  font-size: 20px;
+  margin-left: 32px;
+  color: white
+}
+
+.grupo_Input input {
+  font-style: normal; 
+  font-size: 24px;
+  height: 40px;
+  line-height: 40px;
+  color: black; 
+  background: none; 
+  border: none; 
+  padding-left: 10px;
+  outline: none; 
+  appearance: none; 
+  background-color: rgba(255, 255, 255, 0.4); 
+}
+
+input[type="text"] {
+  margin: 80px 0px 30px 35px; /*define uma margem de 10px na direção vertical (acima e abaixo) e 0px na horizontal (esq e direita).*/
+  width: 65%; /*Define a largura em 100% da largura do contêiner pai, fazendo com que ocupe toda a largura disponível.*/
+}
+
+input[type="password"] {
+  margin-left: 24px; /*define uma margem de 10px na direção vertical (acima e abaixo) e 0px na horizontal (esq e direita).*/
+  width: 65%; /*Define a largura em 100% da largura do contêiner pai, fazendo com que ocupe toda a largura disponível.*/
+}
+
+.mensagem_erro {
+  min-height: 20px; 
+  font-size: 30px; /*Define o tamanho da fonte para 30 pixels*/
+  color: red; /*Define a cor do texto para um tom de cinza*/
+  margin-top: -10px;
+  margin-left: 20px; /*Define uma margem esquerda de 20 pixels*/
+}
+
+.btn-login {
+
+  /* Posicionamento e Modelo de Caixa */
+  border: none; /*Remove a borda do botão.*/
+  border-radius: 30px; /*Adiciona bordas arredondadas ao botão com um raio de 30 pixels.*/
+  display: inline-block; /*Define o botão como um bloco de nível, mas mantendo a disposição inline. Isso permite
+  que o botão ocupe toda a largura, mas ainda permita que outros elementos estejam ao lado dele.*/
+  width: 50%; /*Faz com que o botão ocupe 100% da largura disponível dentro do contêiner pai.*/
+  padding: 15px 0px; /*Adiciona preenchimento interno de 20 pixels ao redor do texto do botão.*/
+  position: relative; /*Define a posição do botão como relativa, para poder alterar a sua posição em relação à
+  sua posição original no layout normal do documento*/
+  margin: 0px 0px 0px 91px; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+
+  /* Cores e Fundos */
+  background-color: #0367A6;; /*Define a cor de fundo do botão num tom de azul. Esta será a cor de fundo padrão
+  quando o botão não está em estado de hover ou foco.*/
+  color: #fff; /*Define a cor do texto do botão como branco*/
+  
+  /* Tipografia */
+  font-weight: bold; /*Deixa o texto do botão em negrito.*/
+  font-size: 18px; /*Define o tamanho da fonte como 18 pixels.*/
+  text-align: center; /*Centraliza o texto dentro do botão.*/
+
+  /* Efeitos e Interatividade */
+  cursor: pointer; /*Muda o cursor para a forma de mão ao passar sobre o botão, indicando que é interativo.*/
+  transition: all 0.2s ease; /*Aplica uma transição suave a todas as propriedades (all) do botão durante um período
+  de 0.2 segundos, usando a função "ease", (inicia devagar, acelera no meio e desacelere no final).*/
+}
+
+.btn-login:disabled {
+  background-color: #ccc; /* Cor de fundo para botão desabilitado */
+  color: #666; /* Cor do texto para botão desabilitado */
+  cursor: not-allowed; /* Cursor para indicar ação não permitida */
+  /* Outros estilos conforme necessário para fazer o botão parecer desabilitado */
+}
+.btn-login:hover {
+  background-color: #329dd5; /*Muda a cor de fundo do botão para um tom azul quando o usuário passa o mouse sobre ele*/
+  transition: all 0.2s ease; /* Define uma transição suave de 0.2 segundos para todas as propriedades CSS do botão.*/
+}
+
+#div_Logado {
+  height: auto;
+  margin: 20px; /*Adiciona margem de 30 pixels nas laterais/acima/abaixo, centralizando o contêiner horizontalmente*/
+}
+
+.btn_Logado {
+  /* Modelo de Caixa */
+  border: none; /*Remove a borda do botão.*/
+  display: inline-block; /*Define o botão como um bloco de nível, mas mantendo a disposição inline. Isso permite
+  que o botão ocupe toda a largura, mas ainda permita que outros elementos estejam ao lado dele.*/
+
+  width: 50%; /*Faz com que o botão ocupe 100% da largura disponível dentro do contêiner pai.*/
+  padding: 20px; /*Adiciona preenchimento interno de 20 pixels ao redor do texto do botão.*/
+  position: relative; /*Define a posição do botão como relativa, para poder alterar a sua posição em relação à
+  sua posição original no layout normal do documento*/
+
+  /* Cores e Fundos */
+  background-color: #3ca9e2; /*Define a cor de fundo do botão num tom de azul. Esta será a cor de fundo padrão
+  quando o botão não está em estado de hover ou foco.*/
+  color: #fff; /*Define a cor do texto do botão como branco*/
+  
+  /* Tipografia */
+  font-weight: bold; /*Deixa o texto do botão em negrito.*/
+  text-transform: uppercase; /*Converte todo o texto do botão para maiúsculas.*/
+  font-size: 18px; /*Define o tamanho da fonte como 18 pixels.*/
+  text-align: center; /*Centraliza o texto dentro do botão.*/
+
+  /* Efeitos e Interatividade */
+  cursor: pointer; /*Muda o cursor para a forma de mão ao passar sobre o botão, indicando que é interativo.*/
+  transition: all 0.2s ease; /*Aplica uma transição suave a todas as propriedades (all) do botão durante um período
+  de 0.2 segundos, usando a função "ease", (inicia devagar, acelera no meio e desacelere no final).*/
+  
+  /* Margens */
+  margin-bottom: 30px; /*Adiciona margens inferior ao botão de 30px.*/
+  margin-top: 10px; /*Adiciona margens superior ao botão de 10px.*/
+}
