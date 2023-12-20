@@ -8,6 +8,3 @@ No FrontEnd instalei :
 
 inicia primeiro o backend, abrindo o terminal na pasta e digitando "npm run dev". O servidor dev subirá na porta 3000
 depois inicia o frontend com o npm start na pasta frontend, ele informará que a porta 3000 já está ocupada e pedirá pra abrir na 3001.
-
-
-A gente já tá com a função de login implementada, no servidor online já rodando. Queria saber o que você precisa, se precisa ter acesso a API, se você só precisa ter acesso as rotas, a gente passando as rotas pra você, pra você trabalhar com as rotas, como é que vai ser a requisição por parte do teu front aí.
